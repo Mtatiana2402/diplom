@@ -1,0 +1,50 @@
+@font-face {
+    font-family: "ChunkFive";
+    src: url("../Diplom/fonts/Chunk.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Lato-Regular";
+    src: url("../Diplom/fonts/Lato-Regular.ttf") format("truetype");
+    font-style: normal;
+    font-weight: normal;
+}
+@font-face {
+    font-family: "Lato-Light";
+    src: url("../Diplom/fonts/Lato-Light.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 200;
+}
+@font-face {
+    font-family: "Lato-Medium";
+    src: url("../Diplom/fonts/Lato-Medium.ttf") format("truetype");
+    font-style: normal;
+    font-weight: 300;
+}
+@font-face {
+	font-family: 'themify';
+	src:url('../Diplom/fonts/themify.eot?-fvbane');
+	src:url('../Diplom/fonts/themify.eot?#iefix-fvbane') format('embedded-opentype'),
+		url('../Diplom/fonts/themify.woff?-fvbane') format('woff'),
+		url('../Diplom/fonts/themify.ttf?-fvbane') format('truetype'),
+		url('../Diplom/fonts/themify.svg?-fvbane#themify') format('svg');
+	font-weight: normal;
+	font-style: normal;
+}
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+}
+main {
+    overflow: hidden;
+    // height: 1000px;
+    width: 100vw;
+    position: relative;
+    // background-color: white;
+    .wrapper {
+        width: 90vw;
+        margin: 0 auto;
+    }
+}

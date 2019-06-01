@@ -1,0 +1,339 @@
+$text-Chunk: "ChunkFive";
+$text-Lato-Reg: "Lato-Regular";
+$text-Lato-Light: "Lato-Light";
+$text-Lato-Med: "Lato-Medium";
+$text-color-main: #777;
+$text-color-add: white;
+$text-color-title: #01a2a6;
+$width-lg: 992px;
+$width-md: 768px;
+$width-sm: 576px;
+
+
+.unvis {
+    display: none;
+    
+}
+.vis {
+    display: block;
+}
+
+.block-places {
+    margin-bottom: 2em;
+    
+    display: grid;
+    grid-template-rows: 46vw auto 3vw 28vw auto;
+    grid-template-columns: repeat(2, 29vw) minmax(10px, 1fr) minmax(185px,450px);
+    @media (max-width: $width-sm) {
+        grid-template-rows: auto 25px auto;
+        grid-template-columns: repeat(2, 50px) 10px 1fr;
+    }
+   
+    
+        .place1-photo {
+            grid-area: 1/1/2/3;
+            background-size: 100% 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            padding-right: 15px;
+            padding-bottom: 15px;
+            font-family: $text-Lato-Reg;
+            font-size: 16px;
+            font-weight: 600;
+            color: white;
+            @media (max-width: $width-sm) {
+                background-size: 100px 80px;
+                background-repeat: no-repeat;
+                background-position-x: center;
+            }
+            &[title="batu"] {
+                background-image: url(Images/Batu.png);
+            }
+            &[title="ijen"] {
+                background-image: url(Images/ijen.jpg);
+            }
+            &[title="besar"] {
+                background-image: url(Images/besar_ijen.jpg);
+            }
+            &[title="botanical garden"] {
+                background-image: url(Images/botanical_garden.jpg);
+            }
+            &[title="museum"] {
+                background-image: url(Images/museum_panji1.jpg);
+            }
+            &[title="masjid"] {
+                background-image: url(Images/masjid1.jpg);
+            }
+            &[title="balekambang"] {
+                background-image: url(Images/balekambang.jpg);
+            }
+            &[title="singosari"] {
+                background-image: url(Images/singosari.jpg);
+            }
+            &[title="brawijaya"] {
+                background-image: url(Images/brawijaya.jpg);
+            }
+            &[title="bengkung"] {
+                background-image: url(Images/bengkung1.jpg);
+            }
+            &[title="jago"] {
+                background-image: url(Images/jago.jpg);
+            }
+            &[title="ngliyep"] {
+                background-image: url(Images/ngliyep1.jpg);
+            }
+            &[title="goa-cina"] {
+                background-image: url(Images/goa-cina2.jpg);
+            }
+            &[title="sumberawan"] {
+                background-image: url(Images/sumberawan.jpg);
+            }
+        }
+        .place1-text {
+            grid-area: 1/4/3/5;
+            display: flex;
+            flex-direction: column;
+            font-size: 1rem;
+            text-align: justify;
+            @media (max-width: $width-lg) {
+                font-size: .8rem;
+            }
+            @media (max-width: $width-md) {
+                font-size: .65rem;
+            }
+            &__icon1 {
+                width: 5.3em;
+                height: 5.5em;
+                background-image: url(Images/icon-1.png);
+                background-size: 100% 100%;
+                @media (max-width: $width-md) {
+                    display: none;
+                }
+            }
+            &__icon2 {
+                width: 5.9em;
+                height: 3em;
+                background-image: url(Images/icon-2.png);
+                background-size: 100% 100%;
+                @media (max-width: $width-md) {
+                    display: none;
+                }
+            }
+            &__icon3 {
+                width: 4.87em;
+                height: 5.25em;
+                background-image: url(Images/icon-3.png);
+                background-size: 100% 100%;
+                @media (max-width: $width-md) {
+                    display: none;
+                }
+            }
+            & h5 {
+                margin: .7em 0;
+                font-family: $text-Lato-Light;
+                font-size: 1.875em;
+                color: $text-color-title;
+                @media (max-width: $width-md) {
+                    margin: 0 0 .2em;
+                }
+            }
+            & p {
+                margin: 0;
+                font-family: $text-Lato-Reg;
+                font-size: 1em;
+                font-weight: 600;
+                color: $text-color-main;
+                line-height: 2em;
+            }            
+        }
+        .place2-text {
+            grid-area: 4/1/6/2;
+            margin-right: 2.1em;
+            display: flex;
+            flex-direction: column;
+            font-size: 1rem;
+            text-align: justify;
+            @media (max-width: $width-lg) {
+                font-size: .8rem;
+            }
+            @media (max-width: $width-md) {
+                font-size: 0.65rem;               
+            }
+            @media (max-width: $width-sm) {
+                grid-area: 3/4/4/5;
+                font-size: .65rem;
+            }
+            &__icon1 {
+                width: 4.3em;
+                height: 4.5em;
+                background-image: url(Images/icon-1.png);
+                background-size: 100% 100%;
+                @media (max-width: $width-md) {
+                    display: none;
+                }
+            }
+            &__icon2 {
+                width: 4.9em;
+                height: 2em;
+                background-image: url(Images/icon-2.png);
+                background-size: 100% 100%;
+                @media (max-width: $width-md) {
+                    display: none;
+                }
+            }
+            &__icon3 {
+                width: 3.87em;
+                height: 4.25em;
+                background-image: url(Images/icon-3.png);
+                background-size: 100% 100%;
+                @media (max-width: $width-md) {
+                    display: none;
+                }
+            }
+            & h5 {
+                margin: .4em 0 .5em;
+                font-family: $text-Lato-Light;
+                font-size: 1.875em;
+                color: $text-color-title;
+                @media (max-width: $width-md) {
+                    margin: 0 0 .2em;
+                }
+            }
+            & p {
+                margin: 0;
+                font-family: $text-Lato-Reg;
+                font-size: 1em;
+                font-weight: 600;
+                color: $text-color-main;
+                line-height: 1.8em;
+                b {
+                    font-weight: 900;
+                }
+            }
+        }
+        .place2-photo1 {
+            grid-area: 4/2/5/3;
+           
+            background-size: 100% 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            padding-right: 15px;
+            padding-bottom: 15px;
+            font-family: $text-Lato-Reg;
+            font-size: 16px;
+            font-weight: 600;
+            color: white;
+            @media (max-width: $width-sm) {
+                grid-area: 3/1/4/3;
+                background-size: 100px 90px;
+                background-repeat: no-repeat;
+                background-position-x: center;
+            }
+            &[title="bromo"] {
+                background-image: url(Images/bromo.png);
+            }
+            &[title="semeru"] {
+                background-image: url(Images/semeru2.jpg);
+            }
+            &[title="panatran"] {
+                background-image: url(Images/panataran1.jpg);
+            }
+            &[title="jodipan"] {
+                background-image: url(Images/jodipan-village.jpg);
+            }
+            &[title="badut"] {
+                
+                background-image: url(Images/badut_temple.jpg);
+            }
+            &[title="kidal"] {
+                background-image: url(Images/kidal.jpg);
+            }
+            &[title="biru"] {
+                background-image: url(Images/biru_beach1.jpg);
+            }
+            &[title="anjlok"] {
+                background-image: url(Images/anjlok1.jpg);
+            }
+            &[title="bolu-bolu"] {
+                background-image: url(Images/bolu-bolu1.jpg);
+            }
+            &[title="bengkung"] {
+                background-image: url(Images/bengkung2.jpg);
+            }
+            &[title="mbehi"] {
+                background-image: url(Images/mbehi1.jpg);
+            }
+            &[title="ngliyep"] {
+                background-image: url(Images/ngliyep2.jpg);
+            }
+            &[title="saloko"] {
+                background-image: url(Images/saloko1.jpg);
+            }
+            &[title="licin"] {
+                background-image: url(Images/licin1.jpg);
+            }
+        }
+        .place2-photo2 {
+            grid-area: 4/4/5/5;
+            
+            background-size: 100% 100%;
+            display: flex;
+            justify-content: flex-end;
+            align-items: flex-end;
+            padding-right: 15px;
+            padding-bottom: 15px;
+            font-family: $text-Lato-Reg;
+            font-size: 16px;
+            font-weight: 600;
+            color: white;
+            
+            @media (max-width: $width-sm) {
+                display: none;
+            }
+            &[title="bromo"] {
+                background-image: url(Images/bromo-2.png);
+            }
+            &[title="semeru"] {
+                background-image: url(Images/semeru1.jpg);
+            }
+            &[title="panatran"] {
+                background-image: url(Images/panataran2.jpg);
+            }
+            &[title="jodipan"] {
+                background-image: url(Images/botanical_garden2.jpg);
+            }
+            &[title="badut"] {
+                background-image: url(Images/museum_panji2.jpg);
+            }
+            &[title="kidal"] {
+                background-image: url(Images/masjid2.jpg);
+            }
+            &[title="biru"] {
+                background-image: url(Images/biru_beach2.jpg);
+            }
+            &[title="anjlok"] {
+                background-image: url(Images/anjlok2.jpg);
+            }
+            &[title="bolu-bolu"] {
+                background-image: url(Images/bolu-bolu2.jpg);
+            }
+            &[title="bengkung"] {
+                background-image: url(Images/bengkung3.jpg);
+            }
+            &[title="mbehi"] {
+                background-image: url(Images/mbehi2.jpg);
+            }
+            &[title="ngliyep"] {
+                background-image: url(Images/ngliyep3.jpg);
+            }
+            &[title="saloko"] {
+                background-image: url(Images/saloko2.jpg);
+            }
+            &[title="licin"] {
+                background-image: url(Images/licin2.jpg);
+            }
+        }
+    
+}

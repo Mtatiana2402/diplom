@@ -1,0 +1,1019 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="themify-icons.css" type="text/css" />
+    <title>YokNgalam</title>
+</head>
+<body>
+        <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+            <defs>
+            <symbol id="icon-menu" viewBox="0 0 32 32">
+            <title>menu</title>
+            <path d="M2 6h28v4h-28zM2 14h28v4h-28zM2 22h28v4h-28z"></path>
+            </symbol>
+
+            <symbol id="user" viewBox="0 0 785.8159 1010">
+                <title>user</title>
+                <g>
+                    <path  d="M392.9692,0c135.251,0,244.8565,109.5234,244.8565,244.6914c0,135.312-109.6055,244.8145-244.8565,244.8145
+                      c-135.1269,0-244.7734-109.5025-244.7734-244.8145C148.1958,109.5234,257.8423,0,392.9692,0z"/>
+                    <path  d="M785.8159,1010h-0.5762H0V876.8457c0-173.7793,109.3999-321.1318,261.9521-376.0586l131.0171,174.6016
+                      l130.9756-174.6016c152.5938,54.9268,261.8711,202.2793,261.8711,376.0586V1010z"/>
+                  </g>
+            </symbol>
+
+            <symbol id="house" viewBox="0 0 128 128">
+                <title>house</title>
+                <g><path d="M98,72H69v29h29V72z M94,97H73V76h21V97z"/>
+                  <path d="M17,63.8V126h94V63.8l8,8l7.8-7.8L111,48.2V12H92v17.2l-28-28L1.2,64L9,71.8L17,63.8z M55,122H34V76h21V122   z M107,60v62H59V72H30v50h-9V60h-0.2L64,16.8L107.2,60H107z M64,6.8l32,32V16h11v33.8L121.2,64l-2.2,2.2l-55-55l-55,55L6.8,64   L64,6.8z" /></g>
+            </symbol>
+
+            <symbol id="icon-arrow-down" viewBox="0 0 255 255">
+              <title>arrow-down</title>
+              <g>
+                <g id="arrow-drop-down">
+                  <polygon points="0,63.75 127.5,191.25 255,63.75 		"/>
+                </g>
+              </g>
+              </symbol>
+
+              <symbol id="icon-instagram" viewBox="0 0 438.536 438.536">
+                <title>instagram</title>
+                <g>
+                  <path d="M421.981,16.562C410.941,5.519,397.711,0,382.298,0H56.248C40.83,0,27.604,5.521,16.561,16.562
+                    C5.52,27.6,0.001,40.828,0.001,56.243V382.29c0,15.413,5.518,28.644,16.56,39.683c11.043,11.04,24.272,16.563,39.687,16.563
+                    h326.046c15.41,0,28.644-5.523,39.684-16.563c11.043-11.039,16.557-24.27,16.557-39.683V56.243
+                    C438.534,40.825,433.021,27.604,421.981,16.562z M157.462,158.025c17.224-16.652,37.924-24.982,62.097-24.982
+                    c24.36,0,45.153,8.33,62.381,24.982c17.228,16.655,25.837,36.785,25.837,60.386c0,23.598-8.609,43.729-25.837,60.379
+                    c-17.228,16.659-38.014,24.988-62.381,24.988c-24.172,0-44.87-8.336-62.097-24.988c-17.228-16.652-25.841-36.781-25.841-60.379
+                    C131.621,194.81,140.234,174.681,157.462,158.025z M388.865,370.589c0,4.945-1.718,9.083-5.141,12.416
+                    c-3.433,3.33-7.519,4.996-12.282,4.996h-305.2c-4.948,0-9.091-1.666-12.419-4.996c-3.333-3.326-4.998-7.471-4.998-12.416V185.575
+                    H89.08c-3.805,11.993-5.708,24.462-5.708,37.402c0,36.553,13.322,67.715,39.969,93.511c26.65,25.786,58.721,38.685,96.217,38.685
+                    c24.744,0,47.583-5.903,68.527-17.703c20.937-11.807,37.486-27.839,49.676-48.112c12.183-20.272,18.274-42.4,18.274-66.38
+                    c0-12.94-1.91-25.406-5.715-37.402h38.547v185.014H388.865z M388.865,115.626c0,5.52-1.903,10.184-5.716,13.99
+                    c-3.805,3.809-8.466,5.711-13.989,5.711h-49.676c-5.517,0-10.185-1.903-13.99-5.711c-3.806-3.806-5.708-8.47-5.708-13.99V68.522
+                    c0-5.33,1.902-9.945,5.708-13.848c3.806-3.901,8.474-5.854,13.99-5.854h49.676c5.523,0,10.185,1.952,13.989,5.854
+                    c3.812,3.903,5.716,8.518,5.716,13.848V115.626z"/>
+                </g>
+                </symbol>
+
+                <symbol id="icon-twitter" viewBox="0 0 32 32">
+                  <title>twitter</title>
+                  <path d="M32 7.075c-1.175 0.525-2.444 0.875-3.769 1.031 1.356-0.813 2.394-2.1 2.887-3.631-1.269 0.75-2.675 1.3-4.169 1.594-1.2-1.275-2.906-2.069-4.794-2.069-3.625 0-6.563 2.938-6.563 6.563 0 0.512 0.056 1.012 0.169 1.494-5.456-0.275-10.294-2.888-13.531-6.862-0.563 0.969-0.887 2.1-0.887 3.3 0 2.275 1.156 4.287 2.919 5.463-1.075-0.031-2.087-0.331-2.975-0.819 0 0.025 0 0.056 0 0.081 0 3.181 2.263 5.838 5.269 6.437-0.55 0.15-1.131 0.231-1.731 0.231-0.425 0-0.831-0.044-1.237-0.119 0.838 2.606 3.263 4.506 6.131 4.563-2.25 1.762-5.075 2.813-8.156 2.813-0.531 0-1.050-0.031-1.569-0.094 2.913 1.869 6.362 2.95 10.069 2.95 12.075 0 18.681-10.006 18.681-18.681 0-0.287-0.006-0.569-0.019-0.85 1.281-0.919 2.394-2.075 3.275-3.394z"></path>
+                </symbol>
+
+                <symbol id="icon-facebook" viewBox="0 0 32 32">
+                  <title>facebook</title>
+                 <path d="M19 6h5v-6h-5c-3.86 0-7 3.14-7 7v3h-4v6h4v16h6v-16h5l1-6h-6v-3c0-0.542 0.458-1 1-1z"></path>
+                </symbol>
+
+
+            </defs>
+            </svg>
+  
+            <svg aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+              <defs>
+              <symbol id="icon-search" viewBox="0 0 485.213 485.213">
+              <title>search</title>
+              <g>
+                <g>
+                  <path d="M363.909,181.955C363.909,81.473,282.44,0,181.956,0C81.474,0,0.001,81.473,0.001,181.955s81.473,181.951,181.955,181.951
+                    C282.44,363.906,363.909,282.437,363.909,181.955z M181.956,318.416c-75.252,0-136.465-61.208-136.465-136.46
+                    c0-75.252,61.213-136.465,136.465-136.465c75.25,0,136.468,61.213,136.468,136.465
+                    C318.424,257.208,257.206,318.416,181.956,318.416z"/>
+                  <path d="M471.882,407.567L360.567,296.243c-16.586,25.795-38.536,47.734-64.331,64.321l111.324,111.324
+                    c17.772,17.768,46.587,17.768,64.321,0C489.654,454.149,489.654,425.334,471.882,407.567z"/>
+                </g>
+              </g>
+              </symbol>
+
+              <symbol id="plus" viewBox="0 0 128 128">
+                <title>plus</title>
+                <circle fill="#aea25c" cx="64" cy="64" r="64"/><path fill="#ffffa6" d="M103,57H71V25c0-0.6-0.4-1-1-1H58c-0.6,0-1,0.4-1,1v32H25c-0.6,0-1,0.4-1,1v12c0,0.6,0.4,1,1,1h32v32  c0,0.6,0.4,1,1,1h12c0.6,0,1-0.4,1-1V71h32c0.6,0,1-0.4,1-1V58C104,57.4,103.6,57,103,57z"/>
+                </symbol>
+
+                <symbol id="print" viewBox="0 0 573.75 573.75">
+                    <title>print</title>
+                    <g>
+                        <g>
+                          <rect x="143.438" y="439.875" width="286.875" height="19.125"/>
+                          <rect x="143.438" y="497.25" width="286.875" height="19.125"/>
+                          <circle cx="449.438" cy="267.75" r="19.125"/>
+                          <path d="M506.812,172.125h-38.25V38.25c0-21.038-17.213-38.25-38.25-38.25H143.438c-21.038,0-38.25,17.212-38.25,38.25v133.875
+                            h-38.25c-32.513,0-57.375,24.862-57.375,57.375v172.125C9.562,434.138,34.425,459,66.938,459h38.25v76.5
+                            c0,21.037,17.212,38.25,38.25,38.25h286.875c21.037,0,38.25-17.213,38.25-38.25V459h38.25c32.513,0,57.375-24.862,57.375-57.375
+                            V229.5C564.188,196.987,539.325,172.125,506.812,172.125z M124.312,38.25c0-9.562,7.65-19.125,19.125-19.125h286.875
+                            c9.562,0,19.125,7.65,19.125,19.125v133.875H124.312V38.25z M449.438,535.5c0,9.562-7.65,19.125-19.125,19.125H143.438
+                            c-9.562,0-19.125-7.65-19.125-19.125V401.625h325.125V535.5z M545.062,401.625c0,21.037-17.213,38.25-38.25,38.25h-38.25V382.5
+                            H105.188v57.375h-38.25c-21.038,0-38.25-17.213-38.25-38.25V229.5c0-21.038,17.212-38.25,38.25-38.25h439.875
+                            c21.037,0,38.25,17.212,38.25,38.25V401.625z"/>
+                        </g>
+                      </g>
+                </symbol>
+
+                    <symbol id="save" viewBox="0 0 32 32">
+                        <title>save</title>
+                        <g>
+                            <g>
+                              <path  d="M26,0h-2v13H8V0H0v32h32V6L26,0z M28,30H4V16h24V30z"/>
+                              <rect x="6" y="18"  width="20" height="2"/>
+                              <rect x="6" y="22"  width="20" height="2"/>
+                              <rect x="6" y="26"  width="20" height="2"/>
+                              <rect x="18" y="2"  width="4" height="9"/>
+                            </g>
+                          </g>
+                    </symbol>
+              </defs>
+            </svg>
+  
+  <header id="header" class="parallax">
+    <img src="Images/Header-blue.png">
+    <div class="content">
+      <h1>LETS GET <b>LOST</b></h1>
+      <P>Malang will never dissapointed you.</P>
+      <P>From every step you took you will be 
+        amazed and suddenly fallin love with Malang</P>
+      <div class="header__btn">
+        <a href="#">SET ITTINERY NOW</a>
+      </div>
+    </div>
+  </header>
+
+  <section class="menu">
+    <div class="menu__content">
+      <a href="#header" class="logo"></a>
+    
+
+    <div class="nav navbar navbar-expand-lg">
+      <div class="navbar-toggler" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="true" aria-label="Toggle navigation">
+          <span>
+            <svg width="40" height="25" fill="white">
+              <use xlink: href = "#icon-menu"></use>
+          </svg>
+        </span>
+      </div>
+
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+        <ul class="navbar-nav mr-auto">
+          <li class="nav-item">
+            <a class="nav-link" href="#">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Destination</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Ittinary</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Review</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contact</a>
+          </li>
+         
+          <li class="nav-item dropdown">
+              
+              <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <img src="Images/menu-photo.png" alt="#">
+              </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
+                <a class="dropdown-item" href="#">My Profily</a>
+                <a class="dropdown-item" href="#">Change Password</a>
+                <a class="dropdown-item" href="#">Logout</a>
+              </div>
+            </li>
+                   
+        </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+  <main>
+    <div class="wrapper">
+
+      <section class="about">
+        <div class="img"></div>
+        <div class="text">
+          <h5 class="text__title">CITY OF <b>LOVE</b></h5>
+          <p class="text__main">
+            Malang is the second largest city in East Java province, Indonesia. It has a history 
+            dating back to the ancient Mataram Kingdom. The city is famous for its cool 
+            temperature. People in East Java sometimes call it "Paris of East Java.
+          </p>
+        </div>
+      </section>
+
+      <section class="dest">
+        <div class="dest-title">
+          <div class="description">
+            <h5 class="description__title">
+              Des<b>tination</b>
+            </h5>
+            <p class="description__main">
+              Being around by many mountain, Malang not only came with mountain vacation, but our beach,
+              cultural spot, and Human Interest is worth to experienced.
+            </p>
+          </div>
+
+          <div class="regulation">
+            <div class="text">
+              <div class="icon"></div>
+              see basic regulation
+            </div>                      
+          </div>
+        </div>
+
+        <div class="seach">
+          <div class="seach__field">
+              <span class="ti-seach"></span>
+              <input class="seach-control" type="text" placeholder="seach destination">
+          </div>
+          <div class="seach__aside-title">
+            <b>ALL PLACE</b>/ RECOMENDED PLACE
+          </div>
+        </div>
+      </section>
+
+      
+    <section class="vis" page="1">
+        <div class="block-places" >
+        
+          <div  title="batu" class="place1-photo">
+            see more 	&rarr;
+          </div>
+          <div  class="place1-text">
+            <div class="place1-text__icon1"></div>
+            <h5>Batu</h5>
+            <p>
+                is a city located in East Java Province of Indonesia. It is
+                situated about 20 km to the northwest of Malang. 
+                Formerly, it was a part of Malang Regency; but in 2001, 
+                Batu became an independent city. 
+                A population of 190,000 people, it lies on the southern 
+                slopes of Gunung Welirang. Its population largely consists 
+                of Javanese.
+              </p>
+            </div>
+        
+        
+          <div  class="place2-text">
+              <div class="place2-text__icon2"></div>
+              <h5>Bromo</h5>
+              <p>
+                  <b>Mount Bromo</b> is an active volcano and 
+                  part of the Tengger massif, in East Java, 
+                  Indonesia. At 2,329 metres (7,641 ft) it is 
+                  not the highest peak of the massif, but is 
+                  the most well known
+              </p>
+          </div>
+          <div title="bromo" class="place2-photo1">see more 	&rarr;</div>
+          <div title="bromo" class="place2-photo2">see more 	&rarr;</div>
+              
+        </div>
+    </section>  
+
+    <section class="unvis" page="2">
+        <div class="block-places" >
+        
+          <div  title="ijen" class="place1-photo">see more 	&rarr;</div>
+          <div  class="place1-text">
+            <div class="place1-text__icon2"></div>
+            <h5>Ijen</h5>
+            <p>
+                Ijen volcano (Kawah Ijen, Kawah Ijen) located on the Ijen plateau 
+                of the same name on the eastern edge of Java. Tourists come here 
+                to see the fascinating blue flame of burning sulfur, the world's 
+                largest acid lake in the night, and meet the sunrise on the crest 
+                of the crater.
+              </p>
+            </div>
+        
+        
+          <div  class="place2-text">
+              <div class="place2-text__icon2"></div>
+              <h5>Semeru</h5>
+              <p>
+                  Semeru  or Muhomer is the highest volcano on the island of 
+                  Java in Indonesia. Semeru is located at the southern end of 
+                  the volcanic complex - the Tengger Caldera. In the crater of 
+                  the volcano is a lava lake.
+              </p>
+          </div>
+          <div title="semeru" class="place2-photo1">see more 	&rarr;</div>
+          <div title="semeru" class="place2-photo2">see more 	&rarr;</div>
+              
+        </div>
+    </section>
+
+    <section class="unvis" page="3">
+          <div class="block-places" >
+          
+            <div  title="besar" class="place1-photo">see more 	&rarr;</div>
+            <div  class="place1-text">
+              <div class="place1-text__icon1"></div>
+              <h5>Jl. Besar Ijen</h5>
+              <p>
+                  Malang is a historical city and there are many historical 
+                  buildings in it, and even a whole historical quarter located 
+                  in the Jl. Besar Ijen. Along Jl. Besar Ijen, also called 
+                  Ijen Boulevard, houses the largest number of colonial 
+                  architecture buildings that have survived. Among the buildings 
+                  especially pay attention to the old library, the Catholic 
+                  Church, and the military museum Brawijaya, which is worth a 
+                  visit.
+                </p>
+              </div>
+          
+          
+            <div  class="place2-text">
+                <div class="place2-text__icon1"></div>
+                <h5>The Panatran</h5>
+                <p>
+                    The oldest surviving architectural monuments are small, 
+                    elegant Hindu temples ("chandi") on the Dieng Plateau in 
+                    Central Java (VII - early VIII century). The Panataran 
+                    temple complex (XIV - early XV century) in the east of Java 
+                    is very refined; its free, irregular shape is unusual.
+                </p>
+            </div>
+            <div title="panatran" class="place2-photo1">see more 	&rarr;</div>
+            <div title="panatran" class="place2-photo2">see more 	&rarr;</div>
+                
+          </div>
+    </section>
+
+    <section class="unvis" page="4">
+      <div class="block-places" >
+      
+        <div  title="botanical garden" class="place1-photo">see more 	&rarr;</div>
+        <div  class="place1-text">
+          <div class="place1-text__icon1"></div>
+          <h5>Botanical Garden</h5>
+          <p>
+            Bogor Botanical Garden (Kebun Raya Bogor) is located in the Indonesian 
+            city of Bogor (West Java Province) and its surroundings, at the foot 
+            of the volcano Salak. It is the oldest and largest botanical garden in 
+            Indonesia, one of the oldest and largest in the world. In the collection 
+            of about 14.5 thousand plants 5839 species. . In 1941 another branch of the 
+            garden was opened - near the settlement of Purvodadi (Purworadi) on East 
+            Java, covering an area of 85 hectares. His specialization has become less 
+            moisture-loving plants. 
+            </p>
+          </div>
+      
+      
+        <div  class="place2-text">
+            <div class="place2-text__icon1"></div>
+            <h5>Village Jodipan</h5>
+            <p>
+              Tourism Village Jodipan is a small area of the city in which 
+              students and artists painted all the houses in different colors 
+              and painted many 3D paintings on the walls. There are always a lot 
+              of tourists, there are cafes and restaurants, trays with food, 
+              souvenirs and goods for tourists. In general, a good place to take 
+              a photo and leave the memory of your visit to Malang.
+            </p>
+        </div>
+        <div title="jodipan" class="place2-photo1">see more 	&rarr;</div>
+        <div title="jodipan" class="place2-photo2">see more 	&rarr;</div>
+            
+      </div>
+    </section>
+
+    <section class="unvis" page="5">
+        <div class="block-places" >
+        
+          <div  title="museum" class="place1-photo">see more 	&rarr;</div>
+          <div  class="place1-text">
+            <div class="place1-text__icon1"></div>
+            <h5>Museum Panji</h5>
+            <p>
+                Museum Panji is the former Malang Tempo Doeloe museum, which was 
+                located in the city center but in 2017 was moved to a new place 
+                far beyond the Malang line. He tells about the history of the 
+                region and the city, i.e. in our opinion, this is a local history 
+                museum, and a very good one. It is very convenient to visit him 
+                on the way to the volcano Bromo, because It is located just on 
+                the road to it, 12 kilometers from the center. And the most 
+                interesting is that the museum has a swimming pool, and you can 
+                swim in it. 
+              </p>
+            </div>
+        
+        
+          <div  class="place2-text">
+              <div class="place2-text__icon1"></div>
+              <h5>Badut Temple</h5>
+              <p>
+                  Badut Temple or Candi Badut are another ruins of a Hindu temple. 
+                  This is a historic place dating from 760, but at the same time it 
+                  is revered by believers. During Hindu holidays, ceremonies and 
+                  festivals take place here. From a tourist point of view, you can 
+                  visit it, especially since it is located within the city limits, 
+                  on its outskirts, but you will spend no more than 15 minutes on 
+                  the inspection.
+              </p>
+          </div>
+          <div title="badut" class="place2-photo1">see more 	&rarr;</div>
+          <div title="badut" class="place2-photo2">see more 	&rarr;</div>
+              
+        </div>
+    </section>
+
+    <section class="unvis" page="6">
+        <div class="block-places" >
+        
+          <div  title="masjid" class="place1-photo">see more 	&rarr;</div>
+          <div  class="place1-text">
+            <div class="place1-text__icon1"></div>
+            <h5>Masjid Tiban Mosque</h5>
+            <p>
+                Very beautiful multi-level mosque, or rather the whole complex, 
+                including shops and cafes. The mosque is new, is still being 
+                completed, and there are several exhibitions on the territory 
+                dedicated to its construction and architecture. Tourists can 
+                walk around the territory completely free, but when visiting 
+                they should dress appropriately: no short skirts and shorts, 
+                open shoulders, women should cover their heads.
+              </p>
+            </div>
+        
+        
+          <div  class="place2-text">
+              <div class="place2-text__icon1"></div>
+              <h5>Kidal Temple</h5>
+              <p>
+                  Kidal Temple or Candi Kidal - the ruins of a Hindu temple, 
+                  built in 1248 (according to other sources in 1260) for the 
+                  burial of the second king of the kingdom of Singosari - king 
+                  Anusapati. The place will be interesting to lovers of 
+                  antiquities, but you will spend no more than 10 minutes on 
+                  the inspection, especially since there is a chicken farm 
+                  nearby, from which a terrible smell spreads.
+              </p>
+          </div>
+          <div title="kidal" class="place2-photo1">see more 	&rarr;</div>
+          <div title="kidal" class="place2-photo2">see more 	&rarr;</div>
+              
+        </div>
+    </section>
+
+    <section class="unvis" page="7">
+        <div class="block-places" >
+        
+          <div  title="balekambang" class="place1-photo">see more 	&rarr;</div>
+          <div  class="place1-text">
+            <div class="place1-text__icon3"></div>
+            <h5>Balekambang Beach</h5>
+            <p>
+                At 70 kilometers south of Malang are several large beaches of the 
+                Balekambang coast.
+                Sunsets aren’t the only time to enjoy the Balekambang Beach. 
+                During low tide, the sea retreats, unveiling the coral 
+                stones that extend beyond the sand, flaunting the colours 
+                of its coral flora. Go ahead and do a little exploration, and 
+                let brightly coloured fish tickle your feet, as they weave in 
+                and out of the coral garden!
+
+              </p>
+            </div>
+        
+        
+          <div  class="place2-text">
+              <div class="place2-text__icon3"></div>
+              <h5>Biru Beach</h5>
+              <p>
+                  Here you can swim with a mask or go on a deep-sea trip. 
+                  On Sendang Biru Beach, it is possible to charter a boat and 
+                  get to the beautiful desert island of Sempa.
+              </p>
+          </div>
+          <div title="biru" class="place2-photo1">see more 	&rarr;</div>
+          <div title="biru" class="place2-photo2">see more 	&rarr;</div>
+              
+        </div>
+    </section>
+
+    <section class="unvis" page="8">
+        <div class="block-places" >
+        
+          <div  title="singosari" class="place1-photo">see more 	&rarr;</div>
+          <div  class="place1-text">
+            <div class="place1-text__icon1"></div>
+            <h5>The Singosari Temple </h5>
+            <p>
+                The Singosari Temple or Candi Singosari is one of the last 
+                Hindu temples built by the great Singosari dynasty ruling 
+                East Java before the arrival of Islam on the island. It dates 
+                back to 1304 AD. Today it is a protected historical landmark. 
+                This is not a complex of temples, but only the historical 
+                ruins of one temple, surrounded by ancient statues. Also pay 
+                attention to the gate-statue on the road at the entrance to 
+                the temple. It also offers a great view of the surrounding 
+                mountains and the volcano Bromo. It is recommended to visit 
+                this temple in conjunction with the temple of Sumberawan, 
+                because He is not far from here.
+
+              </p>
+            </div>
+        
+        
+          <div  class="place2-text">
+              <div class="place2-text__icon3"></div>
+              <h5>Ahjlok Beach</h5>
+              <p>
+                  The ultimate chill at a natural pool – Pantai Banyu Anjlok.  
+                  Indulge in nature at its best in the calming waters of the 
+                  natural pool. Dive in and out of a waterfall, and feast your 
+                  eyes on a mesmerising sunset.
+              </p>
+          </div>
+          <div title="anjlok" class="place2-photo1">see more 	&rarr;</div>
+          <div title="anjlok" class="place2-photo2">see more 	&rarr;</div>
+              
+        </div>
+    </section>
+
+    <section class="unvis" page="9">
+        <div class="block-places" >
+        
+          <div  title="brawijaya" class="place1-photo">see more 	&rarr;</div>
+          <div  class="place1-text">
+            <div class="place1-text__icon1"></div>
+            <h5>Museum Brawijaya</h5>
+            <p>
+                Museum Brawijaya is a military history museum dedicated to 
+                the struggle of the Indonesian people for independence at 
+                the beginning of the 20th century. The state museum is not 
+                very well-groomed, but you should definitely look here while 
+                walking along the historic street of the city.
+
+              </p>
+            </div>
+        
+        
+          <div  class="place2-text">
+              <div class="place2-text__icon3"></div>
+              <h5>Bolu-Bolu Beach</h5>
+              <p>
+                  If you’re looking for a sport to snorkel with your friends, 
+                  the recommendation are the beaches of Bolu-Bolu Malang 
+                  East Java. This is place so exotic and interesting.
+              </p>
+          </div>
+          <div title="bolu-bolu" class="place2-photo1">see more 	&rarr;</div>
+          <div title="bolu-bolu" class="place2-photo2">see more 	&rarr;</div>
+              
+        </div>
+    </section>
+
+    <section class="unvis" page="10">
+      <div class="block-places" >
+      
+        <div  title="bengkung" class="place1-photo">see more 	&rarr;</div>
+        <div  class="place1-text">
+          <div class="place1-text__icon3"></div>
+          <h5>Bengkung Beach</h5>
+          <p>
+            Up the ante with a natural beach jacuzzi – Pantai Batu Bengkung. Get 
+            a little more intimate with nature with your very own private jacuzzi 
+            on a beach. Nope, it’s not the kind of jacuzzi you might be imagining right now! 
+            Instead, this beautiful rocky beach on the south coast of Malang transforms 
+            into an area of small natural saltwater pools at high tide. This is also a 
+            good time to swim in these pools, as the sea can be get pretty rough and 
+            unsuitable for swimming. 
+            </p>
+          </div>
+      
+      
+        <div  class="place2-text">
+            <div class="place2-text__icon3"></div>
+            <h5></h5>
+            <p>
+              The beach also has the most stunning sunset views one could hope for. 
+              The beach is about a 2-3 hours ride away from Malang. Follow the 
+              directions to beach Sendangbiru but turn towards Goa Cina beach 
+              and beach Bajulmati. Pantai Batu Bengkung is about 2kms from beach Bajulmati.
+            </p>
+        </div>
+        <div title="bengkung" class="place2-photo1">see more 	&rarr;</div>
+        <div title="bengkung" class="place2-photo2">see more 	&rarr;</div>
+            
+      </div>
+    </section>
+
+    <section class="unvis" page="11">
+      <div class="block-places" >
+      
+        <div  title="jago" class="place1-photo">see more 	&rarr;</div>
+        <div  class="place1-text">
+          <div class="place1-text__icon1"></div>
+          <h5>Jago Temple</h5>
+          <p>
+            Jago Temple or Candi Jago - the ruins of a Buddhist temple, built in the period 
+            from 1268 to 1280 years. Although originally it was a Buddhist temple, later typical 
+            statues of Hindu deities appeared here. In our opinion, of all the temples in the 
+            vicinity of Malang, this is the most ambitious and worthy of a visit. It can be 
+            visited on the way to the volcano Bromo or on the way back, because he is on this route.
+            </p>
+          </div>
+      
+      
+        <div  class="place2-text">
+            <div class="place2-text__icon1"></div>
+            <h5>Pantai Mbehi</h5>
+            <p>
+              Pantai Mbehi can put all the other pretty beaches to shame with its turquoise 
+              waters, white sands and beautiful protected forests that it’s located beyond. 
+              Pantai Mbehi is approximately 3km from Kondang Merak Beach.
+            </p>
+        </div>
+        <div title="mbehi" class="place2-photo1">see more 	&rarr;</div>
+        <div title="mbehi" class="place2-photo2">see more 	&rarr;</div>
+            
+      </div>
+    </section>
+
+    <section class="unvis" page="12">
+      <div class="block-places" >
+      
+        <div  title="ngliyep" class="place1-photo">see more 	&rarr;</div>
+        <div  class="place1-text">
+          <div class="place1-text__icon3"></div>
+          <h5>Ngliyep Beach</h5>
+          <p>
+            Feel the touch of soft white sand against your feet: Ngliyep Beach. 
+            Ngliyep beach is named because of its soft white sand. There is a small island, 
+            Mount Kombang, which can be accessed via a wooden bridge. It is also a 
+            spectacular spot where you can watch the sunrise and sunset. 
+            You can also head over to Bukit Cinta Kasih, translated as “Hill of Love”. 
+            There are myths that young people who come to this place would become a couple. 
+            </p>
+          </div>
+      
+      
+        <div  class="place2-text">
+            <div class="place2-text__icon3"></div>
+            <h5></h5>
+            <p>
+              From the beach, you can also walk up a small hill to get to Teluk Putri, 
+              translated as Princess Bay. Its name is inspired by the silky soft smooth 
+              skin of the princess. Head 62 km towards the south of the city of Malang. 
+              You can travel through Donomulyo, or through Sumbermaning Kulon.
+            </p>
+        </div>
+        <div title="ngliyep" class="place2-photo1">see more 	&rarr;</div>
+        <div title="ngliyep" class="place2-photo2">see more 	&rarr;</div>
+            
+      </div>
+    </section>
+
+    <section class="unvis" page="13">
+      <div class="block-places" >
+      
+        <div  title="goa-cina" class="place1-photo">see more 	&rarr;</div>
+        <div  class="place1-text">
+          <div class="place1-text__icon3"></div>
+          <h5>Goa-Cina Beach</h5>
+          <p>
+            Goa Cina Beach might not be as famous as other beaches in Malang, East Java. 
+            That probably has something to do with its tough access and dangerously strong currents. 
+            The ferocious swells of the Indian Ocean crash on three small islands near the shore. 
+            There is a rare natural phenomenon taking place in its very water.
+            The tides from different directions meet in one point: between Nyonya Island and Bantengan Island. 
+            </p>
+          </div>
+      
+      
+        <div  class="place2-text">
+            <div class="place2-text__icon3"></div>
+            <h5>Pantai Saloko</h5>
+            <p>
+              Where waves hit ocean cliffs in refreshing sprays – Pantai Jonggring Saloko Malang. 
+              Experience a refreshing splash of sea water spray at this unconventional beach! 
+              When the waves hit the sea cliffs, the water is sprayed across the shore in its 
+              foamy glory and bubbly delight! Hear the ocean call out to you, with a “brooosh” 
+              sound of short water bursts.
+
+            </p>
+        </div>
+        <div title="saloko" class="place2-photo1">see more 	&rarr;</div>
+        <div title="saloko" class="place2-photo2">see more 	&rarr;</div>
+            
+      </div>
+    </section>
+
+    <section class="unvis" page="14">
+      <div class="block-places" >
+      
+        <div  title="sumberawan" class="place1-photo">see more 	&rarr;</div>
+        <div  class="place1-text">
+          <div class="place1-text__icon1"></div>
+          <h5>Sumberawan Temple</h5>
+          <p>
+            Sumberawan Temple or Candi Sumberawan - one more ruin, only already of a Buddhist stupa. 
+            Its construction dates back to 1359, and allegedly it was timed to the visit of the great 
+            king Khayam Wuruk, the 4th ruler of the state Majapahit, the last pre-Islamic kingdom of 
+            Indonesia. The stupa itself is nothing remarkable, although it will certainly be interesting 
+            to lovers of antiquities. But the very path to it, which runs through the village quarters 
+            and fields, as well as along the canal, which the locals use for bathing and streeks, is interesting. 
+            </p>
+          </div>
+      
+      
+        <div  class="place2-text">
+            <div class="place2-text__icon3"></div>
+            <h5>Pantai Licin</h5>
+            <p>
+              Where waves hit ocean cliffs in refreshing sprays – Pantai Jonggring Saloko Malang. 
+              Experience a refreshing splash of sea water spray at this unconventional beach! 
+              When the waves hit the sea cliffs, the water is sprayed across the shore in its 
+              foamy glory and bubbly delight! Hear the ocean call out to you, with a “brooosh” 
+              sound of short water bursts.
+
+            </p>
+        </div>
+        <div title="licin" class="place2-photo1">see more 	&rarr;</div>
+        <div title="licin" class="place2-photo2">see more 	&rarr;</div>
+            
+      </div>
+    </section>
+
+      <div class="block-pag" actpage="1">
+        <a href="#!-1" class="block-pag__i ti-angle-left"></a>
+        <a href="#!1" class="block-pag__i">1</a>
+        <a href="#!2" class="block-pag__i">2</a>
+        <a href="#!3" class="block-pag__i">3</a>
+        <a href="#!4" class="block-pag__i">4</a>
+        <a href="#!5" class="block-pag__i">5</a>
+        <a href="#!6" class="block-pag__i">6</a>
+        <a href="#!7" class="block-pag__i">7</a>
+        <a href="#!8" class="block-pag__i">8</a>
+        <a href="#!9" class="block-pag__i">9</a>
+        <a href="#!10" class="block-pag__i">10</a>
+        <a href="#!11" class="block-pag__i">11</a>
+        <a href="#!12" class="block-pag__i">12</a>
+        <a href="#!13" class="block-pag__i">13</a>
+        <a href="#!14" class="block-pag__i">14</a>
+        <a href="#!+1" class="block-pag__i ti-angle-right"></a>
+      </div>
+
+
+      <section class="ittinery">
+        <div class="ittinery__title">
+          <h1>Set <b>Ittinery</b></h1>
+          <p>Simply drag and drop what you want to visit, and voila we make a ittinery and schedule for your vacation.<br>
+            Have a great trip!</p>
+        </div>
+
+        <div class="ittinery__main">
+          <div class="ittinery__form">
+            <header>Your Ittinery Title Here</header>
+            <div class="day">
+              <div class="day-text">
+                <p>Day 1</p>
+                <p>05/29/2015 &#9660;</p>
+              </div>
+              <div class="day-field">
+                <div class="img--mountain"></div>
+                <div class="namePlace">Mt. Bromo</div>
+                <div class="time">03.30 - 09.00</div>
+              </div>
+              <div class="day-item1">
+                <div>add sub destination</div>
+                <svg width="20" height="20">
+                  <use xlink: href = "#plus"></use>
+              </svg>
+              </div>
+
+              <div class="day-field">
+                <div class="img--trip"></div>
+                <div class="namePlace">Batu City</div>
+                <div class="time">10.00 - 15.00</div>
+              </div>
+              <div class="day-item2">
+                <div>Enjoy Malang while Listening Music</div>
+                <div></div>
+                <div>Gonna Eat BAKSO</div>
+              </div>
+              <div class="day-item1">
+                <div>add sub destination</div>
+                <svg width="20" height="20">
+                  <use xlink: href = "#plus"></use>
+              </svg>
+              </div>
+
+            </div>
+
+            <div class="day">
+              <div class="day-text">
+                <p>Day 2</p>
+                <p>05/29/2015 &#9660;</p>
+              </div>
+              <div class="day-field--add">
+                Drag Destination Here
+              </div>
+            </div> 
+
+          </div>
+
+          <div class="ittinery__list">
+            <header>
+              <div>List of Destination</div>
+              <div></div>
+            </header>
+            <div class="list-item">
+              <div><b>sort by: </b>Mountain &#9660;</div>
+              <div class="ti-seach"></div>
+            </div>
+            <div class="list-item">
+              <div class="title-place">
+                <div>Mt. Bromo</div>
+                <div>estimated time: <b>5 Hours</b></div>
+              </div>
+              <div class="view-details">
+                <div></div>
+                <div>view details</div>
+              </div>
+            </div>
+            <div class="list-item">
+                <div class="title-place">
+                    <div>Mt. Pandermant</div>
+                    <div>estimated time: <b>5 Hours</b></div>
+                  </div>
+                  <div class="view-details">
+                    <div></div>
+                    <div>view details</div>
+                  </div>
+            </div>
+            <div class="list-item">
+                <div class="title-place">
+                    <div>Mt. Semeru</div>
+                    <div>estimated time: <b>5 Hours</b></div>
+                  </div>
+                  <div class="view-details">
+                    <div></div>
+                    <div>view details</div>
+                  </div>
+            </div>
+            <div class="list-item">
+                <div class="title-place">
+                    <div>Mt. Bromo</div>
+                    <div>estimated time: <b>5 Hours</b></div>
+                  </div>
+                  <div class="view-details">
+                    <div></div>
+                    <div>view details</div>
+                  </div>
+            </div>
+            <div class="list-item">
+                <div class="title-place">
+                    <div>Mt. Bromo</div>
+                    <div>estimated time: <b>5 Hours</b></div>
+                  </div>
+                  <div class="view-details">
+                    <div></div>
+                    <div>view details</div>
+                  </div>
+            </div>
+            
+          </div>
+
+          <div class="ittinery__buttons">
+            <div class="pdf">
+                <svg width="20" height="20" fill="white">
+                    <use xlink: href = "#save"></use>
+                </svg>
+                <div>SAVE AS PDF</div>
+            </div>
+            <div class="print">
+                <svg width="20" height="20" fill="white">
+                    <use xlink: href = "#print"></use>
+                </svg>
+                <div>PRINT</div>
+            </div>
+            
+          </div>
+
+        </div>
+      </section>
+
+    </div>
+    
+    
+    <section class="contact">
+      <div class="wrapper">
+        <div class="contact__title">Contact</div>
+        <div class="contact__main">
+          <form action="#" id="contact">
+            <input name="email" type="email" placeholder="Your email" required>
+            <input name="company" type="text" placeholder="Company" required>            
+            <input name="subject" type="text" placeholder="Subject" required>
+            <textarea name="message" placeholder="Your Messages" required></textarea>
+          </form>
+          <div>OR</div>
+          <div class="address">
+            <h5>You Can Find Us Here</h5>
+            <div>
+                <svg width="30" height="15" fill="white">
+                    <use xlink: href = "#house"></use>
+                </svg>
+                JI.Danau Bratan sekian nomer sekian, Sawojajar Malang
+            </div>
+            <div>FIND ON MAPS</div>
+            <div>
+                <svg width="30" height="15" fill="white">
+                    <use xlink: href = "#user"></use>
+                </svg>
+                (+62)8816723812
+            </div>
+            <div>
+                <svg width="30" height="15" fill="white">
+                    <use xlink: href = "#user"></use>
+                </svg>
+                (+62)8512371632
+            </div>
+          </div>
+          <div class="button">
+            <button type="submit" form="contact">SEND MESSAGE</button>
+          </div>
+        </div>
+      </div>
+
+    </section>
+    
+    <section class="subcribe">
+      <div class="wrapper">
+        <div class="subcribe__content">
+          <div>Keep in Touch</div>
+          <div class="field">
+            <input name="subcribe" type="email" placeholder="Type Email Here for Subcribe">
+            <button name="send" class="ti-angle-right" type="text"></button>
+          </div>
+          <div>We will Give you latest information about Malang</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="footer">
+      <div class="wrapper">
+        <div class="footer__content">
+          <div class="main">
+            <div>Term & Condition  &bull;  Policy  &bull;  Privacy</div>
+            <div class="main__social-links">
+              <a href="https://www.facebook.com/" target="_blank">
+                <svg width="20" height="20" fill="black">
+                  <use xlink: href = "#icon-facebook"></use>
+                </svg>
+              </a>
+              <a href="https://twitter.com/" target="_blank">
+                  <svg width="20" height="20" fill="black">
+                      <use xlink: href = "#icon-twitter"></use>
+                  </svg>
+              </a>
+              <a href="https://www.instagram.com/" target="_blank">
+                  <svg width="20" height="20" fill="black">
+                      <use xlink: href = "#icon-instagram"></use>
+                  </svg>
+              </a>
+            </div>
+            
+          </div>
+          <div>
+              copyright@YokMalang. Allrights Reserved. 2015
+            </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="final-block">
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+      <div></div>
+    </section>
+
+  </main>
+
+
+  
+    
+   
+
+
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script> 
+  <script src='http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js'></script>
+  <script src="js/index.js"></script>
+</body>
+</html>

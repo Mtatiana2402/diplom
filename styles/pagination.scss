@@ -1,0 +1,180 @@
+$text-Chunk: "ChunkFive";
+$text-Lato-Reg: "Lato-Regular";
+$text-Lato-Light: "Lato-Light";
+$text-Lato-Med: "Lato-Medium";
+$text-color-main: #777;
+$text-color-add: white;
+$text-color-title: #01a2a6;
+$width-lg: 992px;
+$width-md: 768px;
+$width-sm: 576px;
+
+.block-pag {
+    // position: relative;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 0;
+    z-index: 6;
+    margin: 20px 0;
+    @media (max-width: $width-md) {
+        padding: 10px 0;
+        margin: 10px 0;
+    }
+
+    &__i {
+        font-family: $text-Chunk;
+        // font-weight: 600;
+        font-size: 16px;
+        text-decoration: none;
+        transition: .2s linear;
+        display: inline-block;
+        
+        margin: 0 3px 6px;
+        height: 28px;
+        width: 25px;
+        // border: 1px solid $text-color-main;
+        line-height: 28px;
+        padding: 0;
+        color: $text-color-main;
+        // font-weight: 700;
+        letter-spacing: .03em;
+        display: none;
+        @media (max-width: $width-md) {
+            font-size: 13px;
+            height: 20px;
+            width: 18px;
+            line-height: 20px;
+        }
+
+        &:first-child,
+        &:last-child {
+            font-size: 18px;
+            font-weight: 900;
+            // padding: 0 0 10px;
+            // height: 28px;
+            // margin: 12px 3px 0;
+            @media (max-width: $width-md) {
+                font-size: 14px;
+               
+            }
+        }
+
+        &:last-child,
+        &:nth-child(2),
+        &:nth-last-child(2) {
+        display: inline-block;
+        }
+    }    
+
+        &__i:hover {
+            text-decoration: none;
+            font-size: 25px;
+            // font-weight: 900;
+            color: $text-color-title;
+            @media (max-width: $width-md) {
+                font-size: 18px;               
+            }
+          }
+        &__i:first-child:hover  {
+            font-size: 25px;
+            @media (max-width: $width-md) {
+                font-size: 20px;               
+            }
+        }
+        &__i:last-child:hover  {
+            font-size: 25px;
+            @media (max-width: $width-md) {
+                font-size: 20px;               
+            }
+        }
+        
+        
+        &:not([actpage="1"]) &__i:nth-child(1) {
+            display: inline-block;
+        }
+    
+}
+
+@for $i from 1 through 19 {
+    .block-pag[actpage="#{$i}"] {
+      // 3 before
+      .block-pag__i:nth-child(#{$i - 2}):not(:first-child):not(:nth-child(2)) {
+        display: inline-block;
+        pointer-events: none;
+        color: transparent;
+        // border-color: transparent;
+        width: 25px;
+        
+        &:after {
+          content: '...';
+          color: $text-color-main;
+          font-size: 16px;
+          margin-left: -6px;
+        }
+    }
+
+        // 2 before
+    .block-pag__i:nth-child(#{$i - 1}):not(:first-child) {
+        display: inline-block;
+      }
+      // before
+      .block-pag__i:nth-child(#{$i}):not(:first-child) {
+        display: inline-block;
+      }
+      // active
+      .block-pag__i:nth-child(#{$i + 1}) {
+        font-size: 25px;
+        color: $text-color-title;
+        display: inline-block;
+        @media (max-width: $width-md) {
+            font-size: 18px;               
+        }
+  
+        +.block-pag__i:last-child {
+          display: none !important;
+        }
+      }
+      // next
+      .block-pag__i:nth-child(#{$i + 2}):not(:last-child) {
+        display: inline-block;
+      }
+      // 2 next
+      .block-pag__i:nth-child(#{$i + 3}):not(:last-child) {
+        display: inline-block;
+      }
+      // 3 next
+      .block-pag__i:nth-child(#{$i + 4}):not(:last-child):not(:nth-last-child(2)) {
+        display: inline-block;
+        pointer-events: none;
+        color: transparent;
+        // border-color: transparent;
+        width: 25px;
+        &:after {
+          content: '...';
+          color: $text-color-main;
+          font-size: 16px;
+          margin-left: -6px;
+        }
+      }
+      
+    }
+}
+.ti-angle-right {
+  font-family: 'themify';
+  font-size: 18px;
+  font-weight: 900;
+  color: $text-color-main;
+  &::before {
+      content: "\e649";
+  }
+}
+
+.ti-angle-left {
+  font-family: 'themify';
+  font-size: 18px;
+  font-weight: 900;
+  color: $text-color-main;
+  &::before {
+      content: "\e64a";
+  }
+}

@@ -1,0 +1,149 @@
+$text-Chunk: "ChunkFive";
+$text-Lato-Reg: "Lato-Regular";
+$text-Lato-Light: "Lato-Light";
+$text-Lato-Med: "Lato-Medium";
+$text-color-main: white;
+$text-color-form: #b6b6b6;
+$color-btn: #b5ed84;
+
+$width-lg: 992px;
+$width-md: 768px;
+$width-sm: 576px;
+
+.contact {
+    height: 760px;
+    background-image: url(Images/bg-contact.png);
+    background-size: cover;
+    @media (max-width: $width-md) {
+        background-size: cover;
+    }
+    &__title {
+        padding-top: 1.5em;
+        font-family: $text-Chunk;
+        font-size: 67px;
+        line-height: 70px;
+        text-align: center;
+        color: $text-color-main;
+        @media (max-width: $width-lg) {
+            font-size: 57px;
+            line-height: 58px;
+        }
+        @media (max-width: $width-md) {
+            font-size: 37px;
+            line-height: 38px;
+        }
+        @media (max-width: $width-sm) {
+            font-size: 27px;
+            line-height: 28px;
+        }
+    }
+
+    &__main {
+        margin-top: 5em;
+        font-size: 1rem;
+        display: grid;
+        grid-template-columns: 450px minmax(20px, 1fr) 450px;
+        grid-template-rows: 260px 15px 65px;
+        font-family: $text-Lato-Reg;
+        font-weight: 600;
+        color: $text-color-main;
+        @media (max-width: $width-lg) {
+            grid-template-columns: 39vw minmax(20px, 1fr) 39vw;
+            font-size: .8rem;
+        }
+        @media (max-width: $width-md) {
+            grid-template-columns: 90vw;
+            grid-template-rows: 260px 65px 50px 200px;
+            font-size: .7em;
+        }
+        & div {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        form {
+            grid-area: 1/1/2/2;
+            display: grid;
+            grid-template-columns: 47.5% 47.5%;
+            grid-template-rows: repeat(2, 55px) 100px;
+            grid-gap: 20px;
+
+            input, textarea {
+                padding: 15px 20px;
+                font-family: $text-Lato-Med;
+                font-size: 14px;
+                color: #777;
+                outline: none;
+                border: none;
+                border-radius: 10px;
+            }
+            input[name="email"] {
+                grid-area: 1/1/2/3;
+            }
+            textarea {
+                grid-area: 3/1/4/3;
+            }
+            input::placeholder, 
+            textarea::placeholder {
+                font-family: $text-Lato-Med;
+                font-size: 14px;
+                font-style: italic;
+                color: $text-color-form;
+            }
+        }
+        .address {
+            grid-area: 1/3/2/4;
+            display: flex;
+            flex-direction: column;
+            justify-content: flex-start;
+            align-items: flex-start;
+            @media (max-width: $width-md) {
+                grid-area: 4/1/5/2;
+            }
+            & h5 {
+                font-family: $text-Lato-Light;
+                font-size: 44px;
+                margin-bottom: 25px;
+                @media (max-width: $width-lg) {
+                    font-size: 34px;
+                }
+                @media (max-width: $width-sm) {
+                    font-size: 24px;
+                    margin-bottom: 20px;
+                }
+            }
+            & div {
+                font-size: 12px;
+                font-weight: 400;
+                margin-top: 10px;
+            }
+            & div:nth-child(3) {
+                margin-top: 0;
+                margin-left: 30px;
+                color: $color-btn;
+                font-style: italic;
+                @media (max-width: $width-md) {
+                    grid-area: 3/1/4/2;
+                }
+            }
+        }
+        .button {
+            grid-area: 3/1/4/2;
+            display: flex;
+            justify-content: flex-end;
+            @media (max-width: $width-md) {
+                grid-area: 2/1/3/2;
+            }
+            & button {
+                padding: 15px;
+                border: none;
+                border-radius: 20px;
+                background-color: $color-btn;
+                font-family: $text-Lato-Reg;
+                font-weight: 600;
+                font-size: 15px;
+                color: $text-color-main;
+            }
+        }
+    }
+}

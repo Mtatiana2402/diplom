@@ -1,0 +1,72 @@
+$text-Chunk: "ChunkFive";
+$text-Lato-Reg: "Lato-Regular";
+$text-Lato-Light: "Lato-Light";
+$text-Lato-Med: "Lato-Medium";
+$text-color-main: #777;
+$text-color-add1: #29d9c2;
+$text-color-add2: #01a2a6;
+$width-lg: 992px;
+$width-md: 768px;
+$width-sm: 576px;
+
+.about {
+    width: 100%;
+    margin-top: 3.125em;
+    margin-bottom: 3.125em;
+    display: grid;
+    grid-template-rows: minmax(120px, 23.4vw);
+    grid-template-columns: 40% 1fr;
+    grid-gap: 15px;
+    font-size: 1rem;
+    @media (max-width: $width-md) {
+        font-size: .7rem;
+    }
+    @media (max-width: 450px) {
+        grid-template-columns: 80px 1fr;
+    }
+    .img {
+        grid-area: 1/1/2/2;
+        background-image: url(Images/about-image.png);
+        background-size: 100% 100%;
+        @media (max-width: 450px) {
+            background-size: 185px 107px;
+            background-position-x: 71%;
+            background-repeat: no-repeat;
+        }
+    }
+    .text {
+        grid-area: 1/2/2/3;
+        padding: 2em 0;
+        text-align: center;
+        @media (max-width: $width-md) {
+            padding: 0 .5em;
+        }
+        @media (max-width: $width-sm) {
+            padding: 0;
+        }
+        
+        &__title {
+            font-family: $text-Chunk;
+            font-size: 60px;
+            color: $text-color-add1;
+            @media (max-width: 1020px) {
+                font-size: 35px;
+            }
+            @media (max-width: $width-md) {
+                font-size: 25px;
+            }
+            @media (max-width: $width-sm) {
+                font-size: 20px;
+            }
+            & b {
+                color: $text-color-add2;
+            }
+        }
+        &__main {
+            font-family: $text-Lato-Reg;
+            font-size: 1em;
+            color: $text-color-main;
+            text-align: justify;
+        }
+    }
+}

@@ -1,0 +1,113 @@
+$text-Chunk: "ChunkFive";
+$text-Lato-Reg: "Lato-Regular";
+$text-Lato-Light: "Lato-Light";
+$text-Lato-Med: "Lato-Medium";
+$text-color-main: white;
+$text-color-add: #01a2a6;
+$bg-btn: #ffffa6;
+$text-color-btn: black;
+$width-lg: 992px;
+$width-md: 768px;
+$width-sm: 576px;
+
+.menu {
+    position: fixed;
+    z-index: 1000;
+    top: 0vh;
+    width: 100vw;
+    height: 6vw;
+    // background-image: url(images/bg-header.png);
+    background-color: transparent;
+    // background-size: 100% 100%;
+
+    &__content {
+        margin: 0 auto;
+        width: 90vw;
+        height: inherit;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        .logo {
+            width: 154px;
+            height: 25px;
+            background-image: url(Images/logo.png);
+            background-size: 100% 100%;
+            cursor: pointer;
+            @media (max-width: $width-md) {
+                width: 125px;
+                height: 20px;
+            }
+            @media (max-width: 400px) {
+                width: 90px;
+                height: 15px;
+            }
+        }
+        .navbar-nav {
+            align-items: center;
+            
+            .nav-link {
+                padding: 15px;
+                border-radius: 15px;
+                text-decoration: none;
+                color: $text-color-main;
+                font-family: $text-Lato-Reg;
+                font-size: 14px;
+                transition: .2s linear;
+                cursor: pointer;
+                @media (max-width: $width-lg) {
+                    font-size: 13px;
+                    padding: 5px;
+                }
+
+                &:hover {
+                    box-shadow: 0 0 0 2px white;
+                }
+            }
+            .nav-item:last-child .nav-link {
+                padding: 0 5px;
+            }
+        }
+        .navbar-toggler svg {
+            width: 60px;
+            height: 40px;
+            
+            @media (max-width: $width-md) {
+            width: 25px;
+            height: 20px;
+            }
+        }
+        .navbar-nav {
+            @media (max-width: 992px) {
+            position: absolute;
+            z-index: 1100;
+            width: 120vw;
+            height: auto;
+            left: -83vw;
+            background-image: url(Images/bg-navbar.png);
+            background-image: 100% 100%;
+            }
+        }
+        .dropdown-menu {
+            width: auto;
+            min-width: 100px;
+            background-image: url(Images/bg-dropdown.png) ;
+            background-size: 100% 100%;
+            // border-color: white;
+            // border-width: 1px;
+            border: none;
+            .dropdown-item {
+                color: $text-color-main;
+                font-family: $text-Lato-Reg;
+                font-size: 14px;
+                padding-left: 8px;
+                padding-right: 8px;
+                
+                cursor: pointer;
+                &:hover {
+                    background: transparent;
+                }
+            }
+        }
+    }
+}
