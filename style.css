@@ -133,6 +133,12 @@ main {
   width: 100vw;
   height: 6vw;
   background-color: transparent; }
+  @media (min-width: 1200px) {
+    .menu {
+      height: 75px; } }
+  @media (max-width: 768px) {
+    .menu {
+      height: 35px; } }
   .menu__content {
     margin: 0 auto;
     width: 90vw;

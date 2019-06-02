@@ -19,6 +19,12 @@ $width-sm: 576px;
     // background-image: url(images/bg-header.png);
     background-color: transparent;
     // background-size: 100% 100%;
+    @media (min-width: 1200px) {
+        height: 75px;
+    }
+    @media (max-width: $width-md) {
+        height: 35px;
+    }
 
     &__content {
         margin: 0 auto;
